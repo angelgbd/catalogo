@@ -1,0 +1,21 @@
+:host { display: block; }
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--color-linea, #e5e7eb);
+  border-radius: var(--radio, 12px);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.tarjeta:hover { transform: translateY(-3px); box-shadow: 0 8px 24px #11182718; }
+.tarjeta img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #f1f3f7; }
+.cuerpo { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 10px; padding: 18px; }
+h3 { margin: 0; color: var(--color-tinta, #111827); font-size: 17px; }
+.precio { margin: 0; color: var(--color-azul, #0066cc); font-size: 20px; font-weight: 700; }
+.existencia { margin: 0; color: var(--color-verde, #2e9e5b); font-size: 14px; }
+.existencia.agotado { color: var(--color-rojo, #ff4757); }
+boton-app { margin-top: auto; }
